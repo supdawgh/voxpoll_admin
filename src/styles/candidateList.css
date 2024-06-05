@@ -1,0 +1,42 @@
+.list--header{
+    display: flex;
+    margin: 2rem 0;
+    justify-content: space-between;
+}
+.list--header h2{
+    color: tomato;
+}
+.list--header select{
+    border-radius: 10px;
+    border: none;
+    padding: 8px 12px;
+    border: 1px solid #dde6ed;
+    color: tomato;
+}
+.list--container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.list{
+    display: flex;
+    padding-right: 10px;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.3s ease-in-out;
+}
+.candidate--details{
+   display: flex;
+   align-items: center;
+   gap: 20px;
+   color: #525252;
+
+}
+.candidate--details img{
+    width: 70px;
+    background: tomato;
+}
+.list:hover{
+    background: #dde6ed;
+    border-radius: 10px;
+}
