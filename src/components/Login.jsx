@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/login.css'
 import { useNavigate } from 'react-router-dom';
+import logo from '../assets/logo2.png';
 
 const Login = ({ setIsAuthenticated }) => {
     const navigate=useNavigate();
@@ -11,6 +12,10 @@ const Login = ({ setIsAuthenticated }) => {
   };
   return (
     <div className='login'>
+        <img src={logo} alt='' className='logo'/>
+        <div className='login-header-title'>
+           <h2> Voxpoll Admin Portal</h2>
+        </div>
         <form className='login-container'>
             <div className='login-title'>
               <h2>Admin Login</h2>

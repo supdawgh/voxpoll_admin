@@ -4,8 +4,17 @@
     height: 100%;
     display: grid;
 }
+.logo{
+    width: 200px;
+    margin:auto;
+}
+.login-header-title{
+    display: flex;
+    justify-content: center;
+    color: black;
+}
 .login-container{
-    place-self: center;
+    margin: auto;
     width: max(23vw,330px);
     background-color: white;
     display: flex;
@@ -16,6 +25,7 @@
     font-size: 14px;
     animation: fadeIn 0.5s;
 }
+
 .login-title{
     display: flex;
     justify-content: space-between;
