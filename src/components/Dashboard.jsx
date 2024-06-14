@@ -1,25 +1,17 @@
-import React from 'react'
+import React from "react";
+import ContentHeader from "./ContentHeader";
+import "../styles/content.css";
+import Card from "../components/Card";
 
-
-
-import '../styles/dashboard.css';
-import Sidebar from './Sidebar';
-import Content from './Content';
-import Profile from './Profile';
-
-
+import NewEvents from "./NewEvents";
 const Dashboard = () => {
-  
   return (
-    <div className='dashboard'>
-      <Sidebar/>
-      <div className="dashboard--content">
-        <Content/>
-        <Profile/>
-      </div>
-      
-     </div>
+    <div className="content">
+      <ContentHeader />
+      <Card />
+      <NewEvents />
+    </div>
   );
 };
 
-export default Dashboard
+export default Dashboard;

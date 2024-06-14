@@ -1,11 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 
-*{
-  margin:0;
-  padding:0;
-  font-family: 'Outfit', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", sans-serif;
 }
-body{
+body {
   background: #dde6ed;
   padding: 20px;
+}
+
+.candidate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.candiadte-info {
+  display: flex;
+  font-weight: 600;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.approve {
+  display: flex;
+  justify-content: space-between;
+}
+
+.approve-btn {
+  background-color: #40a578;
+}
+
+.candidate-photo {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
 }

@@ -1,62 +1,64 @@
-.login{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: grid;
+.login {
+  position: absolute;
+  width: 100%;
+  /* height: 100%; */
+  display: grid;
+  gap: 30px;
 }
-.logo{
-    width: 200px;
-    margin:auto;
+.logo {
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.login-header-title{
-    display: flex;
-    justify-content: center;
-    color: black;
+.login-header-title {
+  display: flex;
+  justify-content: center;
+  color: black;
 }
-.login-container{
-    margin: auto;
-    width: max(23vw,330px);
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    padding: 25px 30px;
-    border-radius: 8px;
-    font-size: 14px;
-    animation: fadeIn 0.5s;
+.login-container {
+  margin: auto;
+  width: max(23vw, 330px);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 25px 30px;
+  border-radius: 8px;
+  font-size: 14px;
+  animation: fadeIn 0.5s;
 }
 
-.login-title{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: black;
+.login-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
 }
-.login-title RxCross2{
-    cursor: pointer;
+.login-title RxCross2 {
+  cursor: pointer;
 }
-.login-input{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.login-input {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
-.login-input input{
-outline: none;
-border: 1px solid #c9c9c9;
-padding: 10px;
-border-radius: 4px;
+.login-input input {
+  outline: none;
+  border: 1px solid #c9c9c9;
+  padding: 10px;
+  border-radius: 4px;
 }
-.login-condition{
-    display: flex;
-    align-items: start;
-    gap: 8px;
+.login-condition {
+  display: flex;
+  align-items: start;
+  gap: 8px;
 }
 button {
-    border: none;
-    padding: 10px;
-    border-radius: 4px;
-    color: white;
-    background-color: tomato;
-    font-size: 15px;
-    cursor: pointer;
-  }
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  color: white;
+  background-color: tomato;
+  font-size: 15px;
+  cursor: pointer;
+}
