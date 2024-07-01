@@ -29,19 +29,23 @@ const UnverifiedEvents = () => {
         <h2>Unverified Events</h2>
       </div>
       <div className="list--container">
-        {events.map((event) => (
-          <div
-            key={event._id}
-            className="list"
-            onClick={() => navigate(`/unverified/${event._id}`)}
-          >
-            <div className="candidate--details">
-              <img src={event.eventBanner} alt={event.eventName}></img>
-              <h2>{event.eventName}</h2>
+        {events.length > 0 ? (
+          events.map((event) => (
+            <div
+              key={event._id}
+              className="list"
+              onClick={() => navigate(`/unverified/${event._id}`)}
+            >
+              <div className="candidate--details">
+                <img src={event.eventBanner} alt={event.eventName}></img>
+                <h2>{event.eventName}</h2>
+              </div>
+              <span>{event.eventStatus}</span>
             </div>
-            <span>{event.eventStatus}</span>
-          </div>
-        ))}
+          ))
+        ) : (
+          <div>No Unverified Events</div>
+        )}
       </div>
     </div>
   );

@@ -12,6 +12,7 @@ import Unverified from "./components/Unverified";
 import AllEvents from "./components/AllEvents";
 import UnverifiedDetails from "./components/UnverifiedDetails";
 import EventDetails from "./components/EventDetails";
+import NewAdmin from "./components/NewAdmin";
 
 const App = () => {
   return (
@@ -64,6 +65,16 @@ const App = () => {
             <ProtectedRoute>
               <AppLayout>
                 <EventDetails />
+              </AppLayout>
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/newadmin"
+          element={
+            <ProtectedRoute>
+              <AppLayout>
+                <NewAdmin />
               </AppLayout>
             </ProtectedRoute>
           }

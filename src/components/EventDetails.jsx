@@ -15,7 +15,6 @@ const category = {
 
 function EventDetails() {
   const { id } = useParams();
-  console.log(id);
 
   const { axiosins } = useContext(AuthContext);
 

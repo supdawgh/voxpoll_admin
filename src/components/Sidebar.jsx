@@ -11,6 +11,7 @@ import {
   BiTask,
 } from "react-icons/bi";
 import { Link, useLocation } from "react-router-dom";
+import { GrUserAdmin } from "react-icons/gr";
 
 const Sidebar = () => {
   let { pathname } = useLocation();
@@ -43,6 +44,13 @@ const Sidebar = () => {
         >
           <BiSolidReport className="icon" />
           All Events
+        </Link>
+        <Link
+          to="/newadmin"
+          className={`item ${tab === "newadmin" ? "active" : ""}`}
+        >
+          <GrUserAdmin className="icon" />
+          New Admin
         </Link>
       </div>
     </div>
